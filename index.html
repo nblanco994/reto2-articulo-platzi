@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <title>
+      Frontend Mentor | Article preview component
+    </title>
+  </head>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-</head>
-<body>
+  <body>
+    
+    <div class="cont">
+      <section class="cont-header">
+        <img id="background" src="images/drawers.jpg" >
+        <div class="target-person">
+          <section class="txt-header" >
+            <h1><br>Shift the overall look and feel by adding 
+              these wonderful touches to furniture in your home</h1>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+             <p> Ever been in a room and felt like something 
+              was missing? Perhaps it felt slightly bare and 
+              uninviting. I've got some simple tips to help 
+              you make any room feel complete.</p>
+              <div class="detail "  id="data-user">
+                <img id="avatar" src="images/avatar-michelle.jpg" >
+                <section class="detail-person" >
+                  <h2>Michelle Appleton</h2>
+                   <p>28 Jun 2020</p>
+                </section>
+    
+                <div class="social_ person align" id="showOptions">
+                  <button class="share-button"  id="share"> </button>
+                </div>
+                <div class="modal">
+                  <div class="social_container align">
+                    <span class="social_container_text">share</span>
+                    <ul class="social_container_list align">
+                      <li class="item"><img src="images/icon-facebook.svg" alt="facebook icon"></li>
+                      <li class="item"><img src="images/icon-twitter.svg" alt="Twitter icon"></li>
+                      <li class="item"><img src="images/icon-pinterest.svg" alt="Pinterest icon"></li>
+                    </ul>
+                <div class="container_share align">
+                  <button class="share-button-white" id="hideOptions">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+      </div>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Niyuby Blanco</a>.
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
