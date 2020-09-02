@@ -3,8 +3,6 @@ margin: 0;
 padding: 0;
 background-color: hsl(210, 46%, 95%);
 font-family: 'Manrope', sans-serif;
-justify-content: center;
-align-items: center;
 position: relative;  
 }
 .cont-header{
@@ -16,6 +14,7 @@ margin-left: 20px;
 margin-right: 20px;
 border-radius: 10px;
 background-color: white;
+
 }
 
 #background{
@@ -24,6 +23,7 @@ width: 100%;
 height: 210px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+
 }
 
 #avatar{
@@ -44,6 +44,7 @@ padding-right: 25px;
 
 .txt-header h1{
 font-size: 15px;
+margin-top: -3px;
 }
 
 .txt-header p{
@@ -53,21 +54,30 @@ margin-bottom: 30px;
 }
 
 .detail{
-padding:0px;
-display: flex;
+    display: flex;
 }
 
+/*.detail-person{
+   
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+}*/
 .detail h2{
 font-size: 12px;
 margin-top: -5px;
 padding-left:12px;
+
 }
 
 .detail p{
 color: silver;
 font-size: 12px;
-margin-top: -8px;
 padding-left:12px;
+margin-top: -10px;
 }
 
 .attribution{
@@ -77,6 +87,11 @@ padding: 0%;
 
  .share{
 display: flex;
+}
+.social_person{
+    margin: 0%;
+    padding: 0%;
+   
 }
 .modal{
 position: absolute;
@@ -90,7 +105,9 @@ border-radius: 0 0 15px 15px;
 display: none;
 }
 .social_container{
-justify-content: space-between;
+    padding-left: 30px;
+    height: 100%;
+    justify-content: initial;
 }
 
 .social_container_text{
@@ -107,12 +124,17 @@ width: 35%;
 justify-content: space-between;
 }
 
+
 /*.container_share{
     position: absolute;
     right: 30px;
     background-color: hsl(214, 17%, 51%); 
+}
+.target-person{
+    text-align: end;
+    width: 100%;
+    height:100%;
 }*/
-
 .container_share:hover{
 cursor: pointer;
 } 
@@ -124,6 +146,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
 .share-button {
 background: url(../images/icon-share.svg);
 background-color:  rgb(252, 246, 246);
@@ -135,8 +158,9 @@ width: 30px;
 height: 30px;
 border-radius: 50%;
 margin-bottom: 28px;
-margin-left: 60px;
-position: relative;
+
+
+
 }
 
 .share-button-white {
