@@ -12,9 +12,9 @@ width: auto;
 height:auto;
 margin-top: 50px;
 margin-bottom: 50px;
+text-align: left;
 border-radius: 10px;
 background-color: white;
-
 }
 
 #background{
@@ -80,7 +80,7 @@ display: flex;
 .modal{
 position: absolute ;
 bottom: 0;
-background-color:hsl(216, 3%, 34%);
+background-color:hsl(217, 19%, 35%);
 padding: 0%;
 margin-bottom: 65px;
 border-radius: 0 0 10px 10px;
@@ -99,7 +99,7 @@ padding: 0px;
 .social_container_text{
 text-transform: uppercase;
 letter-spacing: 3px;
-font-size: 14px;
+font-size: 13px;
 color: hsl(212, 23%, 69%);
 }
 
@@ -159,8 +159,11 @@ height: 33px;
 border-radius: 50%;
 margin-right: 0px;
 }
+.triangle{
+    display: none;
+}
 
-/*@media screen and (max-device-width : 400px) {
+@media screen and (min-device-width : 1024px) {
 
     #sidebar{
         display:none;
@@ -170,6 +173,118 @@ margin-right: 0px;
            text-align:center;
            }
 
+           body{
+            padding: 0;
+            background-color: hsl(210, 46%, 95%);
+            font-family: 'Manrope', sans-serif;
+            position: relative;  
+            margin-left: 0px;
+            margin-right:0px;
+            }
+    .cont-header{
+                min-height: 230px;
+                text-align: left;
+                height: 250px;
+                width: 680px;
+                margin-top: 30vh;
+                display: flex; 
+                }  
+#background{
+object-fit: cover;
+height: 100%;
+width: 40%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+}
 
+#avatar{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+padding: 0px;
+margin: 0px;
+margin-top: -5px;
+}
 
-}*/
+.txt-header{
+    margin: 20px 35px;
+    padding: 0px;
+}
+
+.txt-header h1{
+font-size: 16px;
+margin-top: -22px;
+}
+
+.txt-header p{
+color: silver;
+font-size: 13px;
+margin-bottom: 20px;
+text-align: justify;
+}
+
+.detail{
+    bottom: 20px;
+    width: 100%;
+}
+.detail h2{
+font-size: 12px;
+margin-top: -2px;
+padding-right:0px;
+}
+
+.detail p{
+color: silver;
+font-size: 12px;
+padding-right:170px;
+margin-top: -10px;
+}
+
+.attribution{
+margin: 0;
+padding: 0;
+}
+
+ .share,.social_person{
+display: flex;
+}
+
+.modal{
+    right: 19.5%;
+    width: 15%;
+    height: 10%;
+    padding: 3px;
+    border-radius: 10px;
+    bottom: 23%;
+}
+.social_container{
+    padding-left: 0px;
+}
+    .social_container_text{
+        font-size: 11px;
+        }
+
+.social_container_list{
+    width: 50%;
+}
+
+.item{
+    margin-right: 0px;
+    padding: 5px;    
+}
+.container_share{
+    display: none;
+
+}
+.triangle{
+    display: block;
+    background-color:hsl(217, 19%, 35%);
+    position: absolute;
+    clip-path: polygon(49% 45%, 0 0, 100% 0);
+    bottom: -20px;
+    width: 20px;
+    height: 20px;
+    left: 44%;
+}
+}
