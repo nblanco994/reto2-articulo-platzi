@@ -1,17 +1,17 @@
 body{
-margin: 0;
 padding: 0;
 background-color: hsl(210, 46%, 95%);
 font-family: 'Manrope', sans-serif;
-position: relative;  
+position: absolute;  
+margin-left: 28px;
+margin-right:28px;
 }
+
 .cont-header{
 width: auto;
 height:auto;
 margin-top: 50px;
 margin-bottom: 50px;
-margin-left: 20px;
-margin-right: 20px;
 border-radius: 10px;
 background-color: white;
 
@@ -23,23 +23,20 @@ width: 100%;
 height: 210px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
-
 }
 
 #avatar{
-object-fit: cover;
-width: 44px;
-height: 44px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 padding: 0px;
-margin-top: -11px;
-
+margin: 0px;
+margin-top: -5px;
 }
 
 .txt-header{
 padding-left: 25px;
 padding-right: 25px;
-
 }
 
 .txt-header h1{
@@ -55,91 +52,82 @@ margin-bottom: 30px;
 
 .detail{
     display: flex;
-}
-
-/*.detail-person{
-   
-    width: 85%;
     justify-content: space-between;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    height: 15%;
-}*/
+    width: 100%;
+}
 .detail h2{
 font-size: 12px;
-margin-top: -5px;
-padding-left:12px;
-
+margin-top: -2px;
+padding-right:40px;
 }
 
 .detail p{
 color: silver;
 font-size: 12px;
-padding-left:12px;
+padding-right:-40px;
 margin-top: -10px;
 }
 
 .attribution{
-margin: 0%;
-padding: 0%;
+margin: 0;
+padding: 0;
 }
 
- .share{
+ .share,.social_person{
 display: flex;
 }
-.social_person{
-    margin: 0%;
-    padding: 0%;
-   
-}
+
 .modal{
-position: absolute;
+position: absolute ;
 bottom: 0;
-background-color:hsl(217, 19%, 35%);
-width: auto;
-height:auto;
+background-color:hsl(216, 3%, 34%);
 padding: 0%;
 margin-bottom: 65px;
-border-radius: 0 0 15px 15px;
+border-radius: 0 0 10px 10px;
 display: none;
+height: 80px;
+padding: 0px;
+
 }
 .social_container{
     padding-left: 30px;
     height: 100%;
     justify-content: initial;
+    
 }
 
 .social_container_text{
 text-transform: uppercase;
 letter-spacing: 3px;
-font-weight: 500;
+font-size: 14px;
 color: hsl(212, 23%, 69%);
 }
 
 .social_container_list{
-padding: 5px 0 0 10px;
+padding: 5px;
 list-style: none;
-width: 35%;
+width: 100%;
 justify-content: space-between;
 }
 
-
-/*.container_share{
-    position: absolute;
-    right: 30px;
-    background-color: hsl(214, 17%, 51%); 
+.item{
+    margin-right: 10px;
+    padding: 5px;
 }
-.target-person{
-    text-align: end;
-    width: 100%;
-    height:100%;
-}*/
+
+.container_share{
+    position: relative;
+    right: 30px;
+    margin-left: 20px;
+    background-color:transparent; 
+}
 .container_share:hover{
 cursor: pointer;
 } 
 .show{
-display: flex;
+display: block;
+width: 100%;
+
 }
 .align{
 display: flex;
@@ -149,18 +137,14 @@ justify-content: center;
 
 .share-button {
 background: url(../images/icon-share.svg);
-background-color:  rgb(252, 246, 246);
+background-color:   rgb(252, 246, 246);
 background-repeat: no-repeat;
 background-size: auto; 
 background-position: center;
 border: none;
-width: 30px;
-height: 30px;
+width: 33px;
+height: 33px;
 border-radius: 50%;
-margin-bottom: 28px;
-
-
-
 }
 
 .share-button-white {
@@ -170,12 +154,10 @@ background-repeat: no-repeat;
 background-size: auto; 
 background-position: center;
 border: none;
-width: 30px;
-height: 30px;
+width: 33px;
+height: 33px;
 border-radius: 50%;
-margin-top: 17px;
-margin-left: 56px;
-margin-top: 20px;
+margin-right: 0px;
 }
 
 /*@media screen and (max-device-width : 400px) {
