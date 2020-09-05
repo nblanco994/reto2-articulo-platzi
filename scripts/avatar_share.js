@@ -1,5 +1,5 @@
-const SHOW = document.getElementById('showOptions');  //showModal
-const HIDE = document.getElementById('hideOptions');    // hideModal
+const SHOW = document.getElementById('showOptions');
+const HIDE = document.getElementById('hideOptions');
 const MODAL = document.getElementsByClassName('modal')[0];
 const SHARE = document.getElementById('share')
 HIDE.onclick = () => {
@@ -14,7 +14,7 @@ SHOW.onclick = (e) => {
         MODAL.classList.remove('show')
         SHOW.classList.remove("black")
     }else{
-        SHARE.setAttribute('images', './images/icon-share-white.svg')
+        SHARE.setAttribute('images', './images/icon-shareWhite.svg')
         MODAL.classList.add('show')
         SHOW.classList.add("black")
     }
